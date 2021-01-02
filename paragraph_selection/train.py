@@ -14,8 +14,8 @@ import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 
-from pytorch_pretrained_bert.tokenization import BertTokenizer
-from pytorch_pretrained_bert.modeling import BertForSequenceClassification
+from transformers import ElectraTokenizer
+from transformers import  ElectraForSequenceClassification
 from pytorch_pretrained_bert.optimization import BertAdam
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
