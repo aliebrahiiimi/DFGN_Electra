@@ -233,7 +233,7 @@ if __name__ == "__main__":
     label_list = processor.get_labels()
 
     # Prepare Tokenizer
-    tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
+    tokenizer = ElectraTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
 
     # Prepare Model
     model = BertForSequenceClassification.from_pretrained(args.bert_model, num_labels=num_labels)
